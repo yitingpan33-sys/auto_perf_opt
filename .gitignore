@@ -1,0 +1,2 @@
+#需要忽略的文件，最大100MB能提交到git上
+particle_output/

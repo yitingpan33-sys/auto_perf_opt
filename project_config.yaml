@@ -1,0 +1,25 @@
+project_name: "particle_simulation"
+project_path: "/home/pyt/program/particle_simulation"
+
+executable:
+  path: "/home/pyt/program/particle_simulation/build/particle_simulation"
+  args: ["/home/pyt/program/particle_simulation/configs/default.json"]
+
+code_scope:
+  source_roots: ["src", "include"]    #包含目录
+  exclude_dirs: ["build", "third_party", "..."]    #排除目录
+
+
+#llm:
+#  provider: "openai"
+#  api_key: "9dbec8540907444499ed129b17326dad.hncFitxcvgiPVyNt"
+#  base_url: ""
+#  model: ""
+#  temperature: 0.1
+#  max_tokens: 4096
+#  timeout: 60
+
+#analysis:
+#  include_code: true
+#  max_functions: 10
+#  generate_code: true
