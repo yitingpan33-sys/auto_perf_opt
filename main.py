@@ -10,11 +10,12 @@ from dynamic_analysis.source_extractor import SourceExtractor
 
 
 def main():
-    parser = argparse.ArgumentParser(description="C++自动性能优化工具 - 零侵入版")
+    parser = argparse.ArgumentParser(description="C++自动性能优化工具")
     parser.add_argument("-c", "--config", required=True, help="项目配置文件路径(YAML)")
     parser.add_argument("-o", "--output", default="output", help="输出目录")
     parser.add_argument("--skip-static", action="store_true", help="跳过静态分析")
     parser.add_argument("--skip-dynamic", action="store_true", help="跳过动态分析")
+    parser.add_argument("--llm", action="store_true", help="启用 LLM 性能优化分析（使用配置文件中的 llm 段）")
 
     args = parser.parse_args()
 
@@ -56,6 +57,14 @@ def main():
         # ── 提取性能问题源码 ──
         if report.get("top_hotspots"):
             extractor = SourceExtractor(config, ast_data)
+
+            # 新方式：提取完整函数体，保存到独立目录（供 LLM 分析）
+            hotspot_sources_dir = os.path.join(dynamic_output, "hotspot_sources")
+            extractor.save_to_directory(
+                report["top_hotspots"][:10], hotspot_sources_dir
+            )
+
+            # 旧方式：保留上下文片段追加到 Markdown 报告中
             source_snippets = extractor.extract_for_functions(
                 report["top_hotspots"][:10], context_lines=40
             )
@@ -132,6 +141,12 @@ def main():
 
         logger.info(f"\n报告文件: {dynamic_output}/hotspot_report.md")
         logger.info(f"JSON数据: {dynamic_output}/hotspot_report.json")
+
+    # ── LLM 性能优化分析 ──
+    if args.llm:
+        from llm_analysis import run_llm_analysis
+        hotspot_sources_dir = os.path.join(dynamic_output, "hotspot_sources")
+        run_llm_analysis(hotspot_sources_dir, config.llm)
 
     logger.info(f"\n所有分析完成，结果保存在: {output_dir}")
 

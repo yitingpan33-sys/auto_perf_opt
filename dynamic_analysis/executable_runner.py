@@ -42,23 +42,39 @@ class ExecutableRunner:
             logger.info("启动性能分析，将等待程序自然运行结束")
         logger.info(f"执行命令: {' '.join(perf_cmd)}")
 
+        # perf stderr 重定向到文件，避免 PIPE 导致的 SIGPIPE 问题
+        perf_stderr_path = os.path.join(perf_output_dir, "perf_stderr.txt")
         try:
-            process = subprocess.Popen(perf_cmd, cwd = os.path.join(self.config.project_path, "build"))
-            if self.run_duration:
-                start_time = time.time()
-                while time.time() - start_time < self.run_duration:
-                    if process.poll() is not None:
-                        break
-                    time.sleep(0.1)
-                if process.poll() is None:
-                    logger.info(f"运行时间已到，终止进程")
-                    process.terminate()
-                    process.wait(timeout=5)
-            else:
-                logger.info("程序正在运行，请手动关闭程序或等待它自然结束...")
-                process.wait()
+            with open(perf_stderr_path, 'w') as stderr_f:
+                process = subprocess.Popen(
+                    perf_cmd,
+                    cwd=os.path.join(self.config.project_path, "build"),
+                    stderr=stderr_f
+                )
+                if self.run_duration:
+                    start_time = time.time()
+                    while time.time() - start_time < self.run_duration:
+                        if process.poll() is not None:
+                            break
+                        time.sleep(0.1)
+                    if process.poll() is None:
+                        logger.info(f"运行时间已到，终止进程")
+                        process.terminate()
+                        process.wait(timeout=5)
+                else:
+                    logger.info("程序正在运行，请手动关闭程序或等待它自然结束...")
+                    process.wait()
             if process.returncode not in [0, -15]:
-                logger.error(f"进程异常退出，返回码: {process.returncode}")
+                # 读取 perf 的 stderr 输出
+                try:
+                    with open(perf_stderr_path, 'r') as f:
+                        stderr_output = f.read().strip()
+                    if stderr_output:
+                        logger.error(f"进程异常退出，返回码: {process.returncode}\nperf stderr:\n{stderr_output}")
+                    else:
+                        logger.error(f"进程异常退出，返回码: {process.returncode}")
+                except Exception:
+                    logger.error(f"进程异常退出，返回码: {process.returncode}")
                 raise RuntimeError(f"可执行文件运行失败，返回码: {process.returncode}")
             logger.info("程序运行完成，perf数据采集成功")
 
@@ -69,39 +85,8 @@ class ExecutableRunner:
                     stdout=f, check=True
                 )
 
-            # ── 运行 perf stat 采集程序级聚合指标 ──
-            perf_stat_path = os.path.join(perf_output_dir, "perf_stat.txt")
-            stat_events = (
-                "cycles,instructions,"
-                "cache-references,cache-misses,"
-                "branch-instructions,branch-misses,"
-                "L1-dcache-loads,"
-                "LLC-loads,LLC-load-misses"
-            )
-            stat_cmd = [
-                "perf", "stat",
-                "-e", stat_events,
-                "-o", perf_stat_path,
-                "--", self.executable_path
-            ] + self.args
-            logger.info(f"运行 perf stat 采集聚合指标...")
-            try:
-                subprocess.run(
-                    stat_cmd,
-                    cwd=os.path.join(self.config.project_path, "build"),
-                    timeout=self.run_duration + 30 if self.run_duration else None,
-                    check=False  # perf stat 可能非零退出，数据仍有效
-                )
-                if os.path.exists(perf_stat_path):
-                    logger.info(f"perf stat 数据已保存: {perf_stat_path}")
-            except subprocess.TimeoutExpired:
-                logger.warning("perf stat 超时，跳过聚合指标采集")
-            except Exception as e:
-                logger.warning(f"perf stat 运行失败: {e}")
-
             return {"perf_data": perf_data_path,
-                    "perf_script": perf_script_path,
-                    "perf_stat": perf_stat_path if os.path.exists(perf_stat_path) else None}
+                    "perf_script": perf_script_path}
         except subprocess.TimeoutExpired:
             logger.error("进程终止超时，强制杀死")
             process.kill()

@@ -1,940 +1,326 @@
-2026-05-25 09:19:52,253 - auto_perf_opt - ERROR - Config file particle_project_config.yaml does not exist
-2026-05-25 09:19:52,253 - auto_perf_opt - ERROR - Config file particle_project_config.yaml does not exist
-2026-05-25 09:31:12,549 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 09:31:12,549 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 09:31:12,549 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 09:31:12,549 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 09:31:12,550 - auto_perf_opt - ERROR - Clang adapter initialized failed: /usr/lib/llvm/libclang.so.1: cannot open shared object file: No such file or directory. To provide a path to libclang use Config.set_library_path() or Config.set_library_file().
-2026-05-25 09:31:12,550 - auto_perf_opt - ERROR - Clang adapter initialized failed: /usr/lib/llvm/libclang.so.1: cannot open shared object file: No such file or directory. To provide a path to libclang use Config.set_library_path() or Config.set_library_file().
-2026-05-25 09:32:19,426 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 09:32:19,426 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 09:32:19,426 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-25 09:32:19,426 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-25 09:32:19,426 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 09:32:19,426 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 09:32:19,429 - auto_perf_opt - INFO - 启动性能分析，将运行 None 秒
-2026-05-25 09:32:19,429 - auto_perf_opt - INFO - 启动性能分析，将运行 None 秒
-2026-05-25 09:32:19,429 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles, instructions, cache-references, cache-misses, branch-instructions, branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 09:32:19,429 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles, instructions, cache-references, cache-misses, branch-instructions, branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 09:32:19,430 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-25 09:32:19,430 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-25 09:32:19,499 - auto_perf_opt - ERROR - 进程异常退出，返回码: 255
-2026-05-25 09:32:19,499 - auto_perf_opt - ERROR - 进程异常退出，返回码: 255
-2026-05-25 09:32:19,499 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 255
-2026-05-25 09:32:19,499 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 255
-2026-05-25 09:34:58,400 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 09:34:58,400 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 09:34:58,400 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 09:34:58,400 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 09:34:59,038 - auto_perf_opt - ERROR - Clang adapter initialized failed: /usr/lib/llvm-14/lib/libclang.so.1: undefined symbol: clang_CXXMethod_isDeleted. Please ensure that your python bindings are compatible with your libclang.so version.
-2026-05-25 09:34:59,038 - auto_perf_opt - ERROR - Clang adapter initialized failed: /usr/lib/llvm-14/lib/libclang.so.1: undefined symbol: clang_CXXMethod_isDeleted. Please ensure that your python bindings are compatible with your libclang.so version.
-2026-05-25 09:37:59,522 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 09:37:59,522 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 09:37:59,523 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 09:37:59,523 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 09:37:59,540 - auto_perf_opt - ERROR - Clang adapter initialized failed: /usr/lib/llvm-14/lib/libclang.so.1: undefined symbol: clang_CXXMethod_isDeleted. Please ensure that your python bindings are compatible with your libclang.so version.
-2026-05-25 09:37:59,540 - auto_perf_opt - ERROR - Clang adapter initialized failed: /usr/lib/llvm-14/lib/libclang.so.1: undefined symbol: clang_CXXMethod_isDeleted. Please ensure that your python bindings are compatible with your libclang.so version.
-2026-05-25 09:45:24,679 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 09:45:24,679 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 09:45:24,680 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 09:45:24,680 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 09:45:24,878 - auto_perf_opt - ERROR - Clang adapter initialized failed: /usr/lib/llvm-14/lib/libclang.so.1: undefined symbol: clang_CXXMethod_isDeleted. Please ensure that your python bindings are compatible with your libclang.so version.
-2026-05-25 09:45:24,878 - auto_perf_opt - ERROR - Clang adapter initialized failed: /usr/lib/llvm-14/lib/libclang.so.1: undefined symbol: clang_CXXMethod_isDeleted. Please ensure that your python bindings are compatible with your libclang.so version.
-2026-05-25 09:45:42,769 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 09:45:42,769 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 09:45:42,769 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 09:45:42,769 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 09:45:42,787 - auto_perf_opt - ERROR - Clang adapter initialized failed: /usr/lib/llvm-14/lib/libclang.so.1: undefined symbol: clang_CXXMethod_isDeleted. Please ensure that your python bindings are compatible with your libclang.so version.
-2026-05-25 09:45:42,787 - auto_perf_opt - ERROR - Clang adapter initialized failed: /usr/lib/llvm-14/lib/libclang.so.1: undefined symbol: clang_CXXMethod_isDeleted. Please ensure that your python bindings are compatible with your libclang.so version.
-2026-05-25 10:02:59,373 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 10:02:59,373 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 10:02:59,374 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 10:02:59,374 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 10:02:59,420 - auto_perf_opt - INFO - Clang adapter initialized successfully
-2026-05-25 10:02:59,420 - auto_perf_opt - INFO - Clang adapter initialized successfully
-2026-05-25 10:02:59,421 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-25 10:02:59,421 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-25 10:03:01,157 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/particle.h: Error parsing translation unit.
-2026-05-25 10:03:01,157 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/particle.h: Error parsing translation unit.
-2026-05-25 10:03:01,158 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/solver_serial.h: Error parsing translation unit.
-2026-05-25 10:03:01,158 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/solver_serial.h: Error parsing translation unit.
-2026-05-25 10:03:01,159 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/solver.h: Error parsing translation unit.
-2026-05-25 10:03:01,159 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/solver.h: Error parsing translation unit.
-2026-05-25 10:03:01,161 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/utils.h: Error parsing translation unit.
-2026-05-25 10:03:01,161 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/utils.h: Error parsing translation unit.
-2026-05-25 10:03:01,163 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/stats.h: Error parsing translation unit.
-2026-05-25 10:03:01,163 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/stats.h: Error parsing translation unit.
-2026-05-25 10:03:01,164 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/physics.h: Error parsing translation unit.
-2026-05-25 10:03:01,164 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/physics.h: Error parsing translation unit.
-2026-05-25 10:03:01,166 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/solver_openmp.h: Error parsing translation unit.
-2026-05-25 10:03:01,166 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/solver_openmp.h: Error parsing translation unit.
-2026-05-25 10:03:01,167 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/solver_thread.h: Error parsing translation unit.
-2026-05-25 10:03:01,167 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/solver_thread.h: Error parsing translation unit.
-2026-05-25 10:03:01,170 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/timer.h: Error parsing translation unit.
-2026-05-25 10:03:01,170 - auto_perf_opt - ERROR - Clang adapter parsed failed/home/pyt2204/program/particle_simulation/include/timer.h: Error parsing translation unit.
-2026-05-25 10:03:01,171 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，0 个类
-2026-05-25 10:03:01,171 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，0 个类
-2026-05-25 10:03:01,171 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-25 10:03:01,171 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-25 10:03:01,219 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-25 10:03:01,219 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-25 10:03:01,219 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-25 10:03:01,219 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-25 10:03:01,229 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-25 10:03:01,229 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-25 10:03:01,229 - auto_perf_opt - INFO - 静态分析完成
-2026-05-25 10:03:01,229 - auto_perf_opt - INFO - 静态分析完成
-2026-05-25 10:03:01,229 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-25 10:03:01,229 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-25 10:03:01,230 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:03:01,230 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:03:01,230 - auto_perf_opt - INFO - 启动性能分析，将运行 None 秒
-2026-05-25 10:03:01,230 - auto_perf_opt - INFO - 启动性能分析，将运行 None 秒
-2026-05-25 10:03:01,230 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles, instructions, cache-references, cache-misses, branch-instructions, branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:03:01,230 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles, instructions, cache-references, cache-misses, branch-instructions, branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:03:01,231 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-25 10:03:01,231 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-25 10:03:01,286 - auto_perf_opt - ERROR - 进程异常退出，返回码: 255
-2026-05-25 10:03:01,286 - auto_perf_opt - ERROR - 进程异常退出，返回码: 255
-2026-05-25 10:03:01,287 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 255
-2026-05-25 10:03:01,287 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 255
-2026-05-25 10:11:12,134 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 10:11:12,134 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 10:11:12,135 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 10:11:12,135 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 10:11:12,236 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-25 10:11:12,236 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-25 10:11:12,237 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-25 10:11:12,237 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-25 10:11:16,486 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/particle.h: Error parsing translation unit.
-2026-05-25 10:11:16,486 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/particle.h: Error parsing translation unit.
-2026-05-25 10:11:16,487 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_serial.h: Error parsing translation unit.
-2026-05-25 10:11:16,487 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_serial.h: Error parsing translation unit.
-2026-05-25 10:11:16,488 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver.h: Error parsing translation unit.
-2026-05-25 10:11:16,488 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver.h: Error parsing translation unit.
-2026-05-25 10:11:16,490 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/utils.h: Error parsing translation unit.
-2026-05-25 10:11:16,490 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/utils.h: Error parsing translation unit.
-2026-05-25 10:11:16,493 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/stats.h: Error parsing translation unit.
-2026-05-25 10:11:16,493 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/stats.h: Error parsing translation unit.
-2026-05-25 10:11:16,501 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/physics.h: Error parsing translation unit.
-2026-05-25 10:11:16,501 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/physics.h: Error parsing translation unit.
-2026-05-25 10:11:16,502 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_openmp.h: Error parsing translation unit.
-2026-05-25 10:11:16,502 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_openmp.h: Error parsing translation unit.
-2026-05-25 10:11:16,504 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_thread.h: Error parsing translation unit.
-2026-05-25 10:11:16,504 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_thread.h: Error parsing translation unit.
-2026-05-25 10:11:16,506 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/timer.h: Error parsing translation unit.
-2026-05-25 10:11:16,506 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/timer.h: Error parsing translation unit.
-2026-05-25 10:11:16,506 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，0 个类
-2026-05-25 10:11:16,506 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，0 个类
-2026-05-25 10:11:16,506 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-25 10:11:16,506 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-25 10:11:16,553 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-25 10:11:16,553 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-25 10:11:16,554 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-25 10:11:16,554 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-25 10:11:16,570 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-25 10:11:16,570 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-25 10:11:16,570 - auto_perf_opt - INFO - 静态分析完成
-2026-05-25 10:11:16,570 - auto_perf_opt - INFO - 静态分析完成
-2026-05-25 10:11:16,570 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-25 10:11:16,570 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-25 10:11:16,570 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:11:16,570 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:11:16,571 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-25 10:11:16,571 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-25 10:11:16,571 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:11:16,571 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:11:16,572 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-25 10:11:16,572 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-25 10:11:16,611 - auto_perf_opt - ERROR - 进程异常退出，返回码: 255
-2026-05-25 10:11:16,611 - auto_perf_opt - ERROR - 进程异常退出，返回码: 255
-2026-05-25 10:11:16,611 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 255
-2026-05-25 10:11:16,611 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 255
-2026-05-25 10:15:47,593 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 10:15:47,593 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 10:15:47,593 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 10:15:47,593 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 10:15:47,615 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-25 10:15:47,615 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-25 10:15:47,615 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-25 10:15:47,615 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-25 10:15:51,511 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/particle.h: Error parsing translation unit.
-2026-05-25 10:15:51,511 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/particle.h: Error parsing translation unit.
-2026-05-25 10:15:51,512 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_serial.h: Error parsing translation unit.
-2026-05-25 10:15:51,512 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_serial.h: Error parsing translation unit.
-2026-05-25 10:15:51,513 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver.h: Error parsing translation unit.
-2026-05-25 10:15:51,513 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver.h: Error parsing translation unit.
-2026-05-25 10:15:51,516 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/utils.h: Error parsing translation unit.
-2026-05-25 10:15:51,516 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/utils.h: Error parsing translation unit.
-2026-05-25 10:15:51,518 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/stats.h: Error parsing translation unit.
-2026-05-25 10:15:51,518 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/stats.h: Error parsing translation unit.
-2026-05-25 10:15:51,519 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/physics.h: Error parsing translation unit.
-2026-05-25 10:15:51,519 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/physics.h: Error parsing translation unit.
-2026-05-25 10:15:51,520 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_openmp.h: Error parsing translation unit.
-2026-05-25 10:15:51,520 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_openmp.h: Error parsing translation unit.
-2026-05-25 10:15:51,522 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_thread.h: Error parsing translation unit.
-2026-05-25 10:15:51,522 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_thread.h: Error parsing translation unit.
-2026-05-25 10:15:51,523 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/timer.h: Error parsing translation unit.
-2026-05-25 10:15:51,523 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/timer.h: Error parsing translation unit.
-2026-05-25 10:15:51,523 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，0 个类
-2026-05-25 10:15:51,523 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，0 个类
-2026-05-25 10:15:51,524 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-25 10:15:51,524 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-25 10:15:51,556 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-25 10:15:51,556 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-25 10:15:51,557 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-25 10:15:51,557 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-25 10:15:51,566 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-25 10:15:51,566 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-25 10:15:51,567 - auto_perf_opt - INFO - 静态分析完成
-2026-05-25 10:15:51,567 - auto_perf_opt - INFO - 静态分析完成
-2026-05-25 10:15:51,567 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-25 10:15:51,567 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-25 10:15:51,567 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:15:51,567 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:15:51,567 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-25 10:15:51,567 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-25 10:15:51,567 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:15:51,567 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:15:51,568 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-25 10:15:51,568 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-25 10:15:51,591 - auto_perf_opt - ERROR - 进程异常退出，返回码: 255
-2026-05-25 10:15:51,591 - auto_perf_opt - ERROR - 进程异常退出，返回码: 255
-2026-05-25 10:15:51,592 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 255
-2026-05-25 10:15:51,592 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 255
-2026-05-25 10:18:27,252 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 10:18:27,252 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 10:18:27,252 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 10:18:27,252 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 10:18:27,273 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-25 10:18:27,273 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-25 10:18:27,274 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-25 10:18:27,274 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-25 10:18:31,173 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/particle.h: Error parsing translation unit.
-2026-05-25 10:18:31,173 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/particle.h: Error parsing translation unit.
-2026-05-25 10:18:31,175 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_serial.h: Error parsing translation unit.
-2026-05-25 10:18:31,175 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_serial.h: Error parsing translation unit.
-2026-05-25 10:18:31,178 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver.h: Error parsing translation unit.
-2026-05-25 10:18:31,178 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver.h: Error parsing translation unit.
-2026-05-25 10:18:31,180 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/utils.h: Error parsing translation unit.
-2026-05-25 10:18:31,180 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/utils.h: Error parsing translation unit.
-2026-05-25 10:18:31,183 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/stats.h: Error parsing translation unit.
-2026-05-25 10:18:31,183 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/stats.h: Error parsing translation unit.
-2026-05-25 10:18:31,189 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/physics.h: Error parsing translation unit.
-2026-05-25 10:18:31,189 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/physics.h: Error parsing translation unit.
-2026-05-25 10:18:31,190 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_openmp.h: Error parsing translation unit.
-2026-05-25 10:18:31,190 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_openmp.h: Error parsing translation unit.
-2026-05-25 10:18:31,191 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_thread.h: Error parsing translation unit.
-2026-05-25 10:18:31,191 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_thread.h: Error parsing translation unit.
-2026-05-25 10:18:31,193 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/timer.h: Error parsing translation unit.
-2026-05-25 10:18:31,193 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/timer.h: Error parsing translation unit.
-2026-05-25 10:18:31,193 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，0 个类
-2026-05-25 10:18:31,193 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，0 个类
-2026-05-25 10:18:31,193 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-25 10:18:31,193 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-25 10:18:31,225 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-25 10:18:31,225 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-25 10:18:31,226 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-25 10:18:31,226 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-25 10:18:31,239 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-25 10:18:31,239 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-25 10:18:31,239 - auto_perf_opt - INFO - 静态分析完成
-2026-05-25 10:18:31,239 - auto_perf_opt - INFO - 静态分析完成
-2026-05-25 10:18:31,239 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-25 10:18:31,239 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-25 10:18:31,239 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:18:31,239 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:18:31,239 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-25 10:18:31,239 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-25 10:18:31,239 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:18:31,239 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:18:31,240 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-25 10:18:31,240 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-25 10:19:44,272 - auto_perf_opt - INFO - 用户手动中断，正在停止性能分析...
-2026-05-25 10:19:44,272 - auto_perf_opt - INFO - 用户手动中断，正在停止性能分析...
-2026-05-25 10:20:52,091 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 10:20:52,091 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 10:20:52,091 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 10:20:52,091 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 10:20:52,113 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-25 10:20:52,113 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-25 10:20:52,113 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-25 10:20:52,113 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-25 10:20:56,014 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/particle.h: Error parsing translation unit.
-2026-05-25 10:20:56,014 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/particle.h: Error parsing translation unit.
-2026-05-25 10:20:56,015 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_serial.h: Error parsing translation unit.
-2026-05-25 10:20:56,015 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_serial.h: Error parsing translation unit.
-2026-05-25 10:20:56,016 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver.h: Error parsing translation unit.
-2026-05-25 10:20:56,016 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver.h: Error parsing translation unit.
-2026-05-25 10:20:56,018 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/utils.h: Error parsing translation unit.
-2026-05-25 10:20:56,018 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/utils.h: Error parsing translation unit.
-2026-05-25 10:20:56,019 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/stats.h: Error parsing translation unit.
-2026-05-25 10:20:56,019 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/stats.h: Error parsing translation unit.
-2026-05-25 10:20:56,021 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/physics.h: Error parsing translation unit.
-2026-05-25 10:20:56,021 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/physics.h: Error parsing translation unit.
-2026-05-25 10:20:56,022 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_openmp.h: Error parsing translation unit.
-2026-05-25 10:20:56,022 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_openmp.h: Error parsing translation unit.
-2026-05-25 10:20:56,023 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_thread.h: Error parsing translation unit.
-2026-05-25 10:20:56,023 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_thread.h: Error parsing translation unit.
-2026-05-25 10:20:56,024 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/timer.h: Error parsing translation unit.
-2026-05-25 10:20:56,024 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/timer.h: Error parsing translation unit.
-2026-05-25 10:20:56,025 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，0 个类
-2026-05-25 10:20:56,025 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，0 个类
-2026-05-25 10:20:56,025 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-25 10:20:56,025 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-25 10:20:56,053 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-25 10:20:56,053 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-25 10:20:56,053 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-25 10:20:56,053 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-25 10:20:56,063 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-25 10:20:56,063 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-25 10:20:56,063 - auto_perf_opt - INFO - 静态分析完成
-2026-05-25 10:20:56,063 - auto_perf_opt - INFO - 静态分析完成
-2026-05-25 10:20:56,063 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-25 10:20:56,063 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-25 10:20:56,063 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:20:56,063 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:20:56,063 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-25 10:20:56,063 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-25 10:20:56,063 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:20:56,063 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:20:56,064 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-25 10:20:56,064 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-25 10:20:56,115 - auto_perf_opt - ERROR - 进程异常退出，返回码: 1
-2026-05-25 10:20:56,115 - auto_perf_opt - ERROR - 进程异常退出，返回码: 1
-2026-05-25 10:20:56,116 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 1
-2026-05-25 10:20:56,116 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 1
-2026-05-25 10:24:30,896 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 10:24:30,896 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-25 10:24:30,896 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 10:24:30,896 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-25 10:24:30,918 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-25 10:24:30,918 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-25 10:24:30,918 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-25 10:24:30,918 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-25 10:24:34,830 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/particle.h: Error parsing translation unit.
-2026-05-25 10:24:34,830 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/particle.h: Error parsing translation unit.
-2026-05-25 10:24:34,832 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_serial.h: Error parsing translation unit.
-2026-05-25 10:24:34,832 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_serial.h: Error parsing translation unit.
-2026-05-25 10:24:34,833 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver.h: Error parsing translation unit.
-2026-05-25 10:24:34,833 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver.h: Error parsing translation unit.
-2026-05-25 10:24:34,834 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/utils.h: Error parsing translation unit.
-2026-05-25 10:24:34,834 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/utils.h: Error parsing translation unit.
-2026-05-25 10:24:34,835 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/stats.h: Error parsing translation unit.
-2026-05-25 10:24:34,835 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/stats.h: Error parsing translation unit.
-2026-05-25 10:24:34,836 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/physics.h: Error parsing translation unit.
-2026-05-25 10:24:34,836 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/physics.h: Error parsing translation unit.
-2026-05-25 10:24:34,837 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_openmp.h: Error parsing translation unit.
-2026-05-25 10:24:34,837 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_openmp.h: Error parsing translation unit.
-2026-05-25 10:24:34,838 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_thread.h: Error parsing translation unit.
-2026-05-25 10:24:34,838 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/solver_thread.h: Error parsing translation unit.
-2026-05-25 10:24:34,839 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/timer.h: Error parsing translation unit.
-2026-05-25 10:24:34,839 - auto_perf_opt - ERROR - 解析文件失败 /home/pyt2204/program/particle_simulation/include/timer.h: Error parsing translation unit.
-2026-05-25 10:24:34,839 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，0 个类
-2026-05-25 10:24:34,839 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，0 个类
-2026-05-25 10:24:34,840 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-25 10:24:34,840 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-25 10:24:34,869 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-25 10:24:34,869 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-25 10:24:34,870 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-25 10:24:34,870 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-25 10:24:34,881 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-25 10:24:34,881 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-25 10:24:34,882 - auto_perf_opt - INFO - 静态分析完成
-2026-05-25 10:24:34,882 - auto_perf_opt - INFO - 静态分析完成
-2026-05-25 10:24:34,882 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-25 10:24:34,882 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-25 10:24:34,882 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:24:34,882 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:24:34,882 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-25 10:24:34,882 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-25 10:24:34,882 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:24:34,882 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-25 10:24:34,883 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-25 10:24:34,883 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-25 10:25:18,126 - auto_perf_opt - ERROR - 进程异常退出，返回码: 1
-2026-05-25 10:25:18,126 - auto_perf_opt - ERROR - 进程异常退出，返回码: 1
-2026-05-25 10:25:18,126 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 1
-2026-05-25 10:25:18,126 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 1
-2026-05-27 14:46:44,065 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-27 14:46:44,065 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-27 14:46:44,067 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-27 14:46:44,067 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-27 14:46:44,334 - auto_perf_opt - ERROR - ❌ Clang初始化失败: bad operand type for unary +: 'str'
-2026-05-27 14:46:44,334 - auto_perf_opt - ERROR - ❌ Clang初始化失败: bad operand type for unary +: 'str'
-2026-05-27 14:48:14,406 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-27 14:48:14,406 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-27 14:48:14,406 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-27 14:48:14,406 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-27 14:48:14,425 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-27 14:48:14,425 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-27 14:48:14,425 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-27 14:48:14,425 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-27 14:48:20,115 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-27 14:48:20,115 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-27 14:48:20,115 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-27 14:48:20,115 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-27 14:48:20,162 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-27 14:48:20,162 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-27 14:48:20,162 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-27 14:48:20,162 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-27 14:48:20,211 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-27 14:48:20,211 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-27 14:48:20,211 - auto_perf_opt - INFO - 静态分析完成
-2026-05-27 14:48:20,211 - auto_perf_opt - INFO - 静态分析完成
-2026-05-27 14:48:20,212 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-27 14:48:20,212 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-27 14:48:20,212 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-27 14:48:20,212 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-27 14:48:20,212 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-27 14:48:20,212 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-27 14:48:20,212 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-27 14:48:20,212 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-27 14:48:20,214 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-27 14:48:20,214 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-27 14:48:25,287 - auto_perf_opt - ERROR - 进程异常退出，返回码: -6
-2026-05-27 14:48:25,287 - auto_perf_opt - ERROR - 进程异常退出，返回码: -6
-2026-05-27 14:48:25,287 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: -6
-2026-05-27 14:48:25,287 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: -6
-2026-05-29 09:14:50,339 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 09:14:50,339 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 09:14:50,340 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 09:14:50,340 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 09:14:50,608 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 09:14:50,608 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 09:14:50,609 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 09:14:50,609 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 09:14:56,856 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 09:14:56,856 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 09:14:56,856 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 09:14:56,856 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 09:14:56,906 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 09:14:56,906 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 09:14:56,906 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 09:14:56,906 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 09:14:56,953 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 09:14:56,953 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 09:14:56,953 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 09:14:56,953 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 09:14:56,953 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 09:14:56,953 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 09:14:56,953 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 09:14:56,953 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 09:14:56,956 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 09:14:56,956 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 09:14:56,957 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 09:14:56,957 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 09:14:56,959 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-29 09:14:56,959 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-29 09:15:02,227 - auto_perf_opt - ERROR - 进程异常退出，返回码: -6
-2026-05-29 09:15:02,227 - auto_perf_opt - ERROR - 进程异常退出，返回码: -6
-2026-05-29 09:15:02,227 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: -6
-2026-05-29 09:15:02,227 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: -6
-2026-05-29 09:16:41,283 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 09:16:41,283 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 09:16:41,284 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 09:16:41,284 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 09:16:41,303 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 09:16:41,303 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 09:16:41,303 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 09:16:41,303 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 09:16:47,078 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 09:16:47,078 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 09:16:47,078 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 09:16:47,078 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 09:16:47,113 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 09:16:47,113 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 09:16:47,113 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 09:16:47,113 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 09:16:47,157 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 09:16:47,157 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 09:16:47,158 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 09:16:47,158 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 09:16:47,158 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 09:16:47,158 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 09:16:47,158 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 09:16:47,158 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 09:16:47,158 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 09:16:47,158 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 09:16:47,158 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 09:16:47,158 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 09:16:47,158 - auto_perf_opt - ERROR - 运行可执行文件失败: 'ExecutableRunner' object has no attribute 'os'
-2026-05-29 09:16:47,158 - auto_perf_opt - ERROR - 运行可执行文件失败: 'ExecutableRunner' object has no attribute 'os'
-2026-05-29 09:17:40,714 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 09:17:40,714 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 09:17:40,715 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 09:17:40,715 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 09:17:40,733 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 09:17:40,733 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 09:17:40,734 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 09:17:40,734 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 09:17:46,328 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 09:17:46,328 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 09:17:46,328 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 09:17:46,328 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 09:17:46,356 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 09:17:46,356 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 09:17:46,357 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 09:17:46,357 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 09:17:46,397 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 09:17:46,397 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 09:17:46,397 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 09:17:46,397 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 09:17:46,397 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 09:17:46,397 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 09:17:46,397 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 09:17:46,397 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 09:17:46,397 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 09:17:46,397 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 09:17:46,398 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 09:17:46,398 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 09:17:46,399 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-29 09:17:46,399 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-29 09:18:02,530 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
-2026-05-29 09:18:02,530 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
-2026-05-29 09:18:02,547 - auto_perf_opt - INFO - 开始分析perf数据...
-2026-05-29 09:18:02,547 - auto_perf_opt - INFO - 开始分析perf数据...
-2026-05-29 09:18:02,548 - auto_perf_opt - INFO - 热点报告已生成: /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
-2026-05-29 09:18:02,548 - auto_perf_opt - INFO - 热点报告已生成: /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
-2026-05-29 09:18:02,548 - auto_perf_opt - INFO - 
-=== Top 5 CPU热点函数 ===
-2026-05-29 09:18:02,548 - auto_perf_opt - INFO - 
-=== Top 5 CPU热点函数 ===
-2026-05-29 09:18:02,548 - auto_perf_opt - INFO - 动态分析完成
-2026-05-29 09:18:02,548 - auto_perf_opt - INFO - 动态分析完成
-2026-05-29 09:18:02,548 - auto_perf_opt - INFO - 所有分析完成，结果保存在: /home/pyt2204/program/auto_perf_opt/particle_output
-2026-05-29 09:18:02,548 - auto_perf_opt - INFO - 所有分析完成，结果保存在: /home/pyt2204/program/auto_perf_opt/particle_output
-2026-05-29 09:21:43,859 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 09:21:43,859 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 09:21:43,860 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 09:21:43,860 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 09:21:43,879 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 09:21:43,879 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 09:21:43,879 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 09:21:43,879 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 09:21:49,197 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 09:21:49,197 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 09:21:49,197 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 09:21:49,197 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 09:21:49,229 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 09:21:49,229 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 09:21:49,229 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 09:21:49,229 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 09:21:49,267 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 09:21:49,267 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 09:21:49,267 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 09:21:49,267 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 09:21:49,267 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 09:21:49,267 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 09:21:49,268 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 09:21:49,268 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 09:21:49,268 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 09:21:49,268 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 09:21:49,268 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 09:21:49,268 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 09:21:49,269 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-29 09:21:49,269 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-29 09:34:05,536 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
-2026-05-29 09:34:05,536 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
-2026-05-29 09:34:05,557 - auto_perf_opt - INFO - 开始分析perf数据...
-2026-05-29 09:34:05,557 - auto_perf_opt - INFO - 开始分析perf数据...
-2026-05-29 09:34:05,557 - auto_perf_opt - INFO - 热点报告已生成: /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
-2026-05-29 09:34:05,557 - auto_perf_opt - INFO - 热点报告已生成: /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
-2026-05-29 09:34:05,557 - auto_perf_opt - INFO - 
-=== Top 5 CPU热点函数 ===
-2026-05-29 09:34:05,557 - auto_perf_opt - INFO - 
-=== Top 5 CPU热点函数 ===
-2026-05-29 09:34:05,557 - auto_perf_opt - INFO - 动态分析完成
-2026-05-29 09:34:05,557 - auto_perf_opt - INFO - 动态分析完成
-2026-05-29 09:34:05,558 - auto_perf_opt - INFO - 所有分析完成，结果保存在: /home/pyt2204/program/auto_perf_opt/particle_output
-2026-05-29 09:34:05,558 - auto_perf_opt - INFO - 所有分析完成，结果保存在: /home/pyt2204/program/auto_perf_opt/particle_output
-2026-05-29 10:11:31,417 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 10:11:31,417 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 10:11:31,418 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 10:11:31,418 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 10:11:31,607 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 10:11:31,607 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 10:11:31,607 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 10:11:31,607 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 10:11:37,793 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 10:11:37,793 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 10:11:37,793 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 10:11:37,793 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 10:11:37,829 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 10:11:37,829 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 10:11:37,829 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 10:11:37,829 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 10:11:37,870 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 10:11:37,870 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 10:11:37,870 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 10:11:37,870 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 10:11:37,871 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 10:11:37,871 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 10:11:37,871 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 10:11:37,871 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 10:11:37,871 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 10:11:37,871 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 10:11:37,871 - auto_perf_opt - INFO - 执行命令: py-spy record -r 99 -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf.script -f raw --nonblocking -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 10:11:37,871 - auto_perf_opt - INFO - 执行命令: py-spy record -r 99 -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf.script -f raw --nonblocking -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 10:11:37,872 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序窗口...
-2026-05-29 10:11:37,872 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序窗口...
-2026-05-29 10:11:38,405 - auto_perf_opt - ERROR - 进程异常退出，返回码: 1
-2026-05-29 10:11:38,405 - auto_perf_opt - ERROR - 进程异常退出，返回码: 1
-2026-05-29 10:11:38,405 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 1
-2026-05-29 10:11:38,405 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 1
-2026-05-29 10:15:47,361 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 10:15:47,361 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 10:15:47,362 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 10:15:47,362 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 10:15:47,381 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 10:15:47,381 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 10:15:47,381 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 10:15:47,381 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 10:15:52,916 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 10:15:52,916 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 10:15:52,917 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 10:15:52,917 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 10:15:52,956 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 10:15:52,956 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 10:15:52,956 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 10:15:52,956 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 10:15:52,994 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 10:15:52,994 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 10:15:52,994 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 10:15:52,994 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 10:15:52,994 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 10:15:52,994 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 10:15:52,994 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 10:15:52,994 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 10:15:52,995 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 10:15:52,995 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 10:15:52,995 - auto_perf_opt - INFO - 执行命令: py-spy record -r 99 -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf.script -f raw --nonblocking --native -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 10:15:52,995 - auto_perf_opt - INFO - 执行命令: py-spy record -r 99 -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf.script -f raw --nonblocking --native -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 10:15:52,995 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序窗口...
-2026-05-29 10:15:52,995 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序窗口...
-2026-05-29 10:15:52,997 - auto_perf_opt - ERROR - 进程异常退出，返回码: 1
-2026-05-29 10:15:52,997 - auto_perf_opt - ERROR - 进程异常退出，返回码: 1
-2026-05-29 10:15:52,997 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 1
-2026-05-29 10:15:52,997 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 1
-2026-05-29 10:17:19,204 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 10:17:19,204 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 10:17:19,204 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 10:17:19,204 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 10:17:19,223 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 10:17:19,223 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 10:17:19,223 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 10:17:19,223 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 10:17:24,697 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 10:17:24,697 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 10:17:24,698 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 10:17:24,698 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 10:17:24,730 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 10:17:24,730 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 10:17:24,730 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 10:17:24,730 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 10:17:24,773 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 10:17:24,773 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 10:17:24,773 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 10:17:24,773 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 10:17:24,773 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 10:17:24,773 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 10:17:24,774 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 10:17:24,774 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 10:17:24,774 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 10:17:24,774 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 10:17:24,774 - auto_perf_opt - INFO - 执行命令: py-spy record -r 99 -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf.script -f raw --native -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 10:17:24,774 - auto_perf_opt - INFO - 执行命令: py-spy record -r 99 -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf.script -f raw --native -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 10:17:24,775 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序窗口...
-2026-05-29 10:17:24,775 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序窗口...
-2026-05-29 10:17:25,253 - auto_perf_opt - ERROR - 进程异常退出，返回码: 1
-2026-05-29 10:17:25,253 - auto_perf_opt - ERROR - 进程异常退出，返回码: 1
-2026-05-29 10:17:25,253 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 1
-2026-05-29 10:17:25,253 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 1
-2026-05-29 11:34:02,475 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 11:34:02,475 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-05-29 11:34:02,476 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 11:34:02,476 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-05-29 11:34:02,680 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 11:34:02,680 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-05-29 11:34:02,686 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 11:34:02,686 - auto_perf_opt - INFO - 开始解析项目...
-2026-05-29 11:34:08,663 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 11:34:08,663 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，9 个类
-2026-05-29 11:34:08,663 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 11:34:08,663 - auto_perf_opt - INFO - 生成函数调用图...
-2026-05-29 11:34:08,705 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 11:34:08,705 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-05-29 11:34:08,705 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 11:34:08,705 - auto_perf_opt - INFO - 生成类继承图...
-2026-05-29 11:34:08,746 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 11:34:08,746 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt2204/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-05-29 11:34:08,747 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 11:34:08,747 - auto_perf_opt - INFO - 静态分析完成
-2026-05-29 11:34:08,747 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 11:34:08,747 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-05-29 11:34:08,747 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 11:34:08,747 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-05-29 11:34:08,747 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 11:34:08,747 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-05-29 11:34:08,747 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 11:34:08,747 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt2204/program/particle_simulation/build/particle_simulation /home/pyt2204/program/particle_simulation/configs/default.json
-2026-05-29 11:34:08,748 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-29 11:34:08,748 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-05-29 11:46:35,342 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
-2026-05-29 11:46:35,342 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
-2026-05-29 11:46:35,361 - auto_perf_opt - INFO - 开始分析perf数据...
-2026-05-29 11:46:35,361 - auto_perf_opt - INFO - 开始分析perf数据...
-2026-05-29 11:46:35,362 - auto_perf_opt - INFO - 热点报告已生成: /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
-2026-05-29 11:46:35,362 - auto_perf_opt - INFO - 热点报告已生成: /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt2204/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
-2026-05-29 11:46:35,362 - auto_perf_opt - INFO - 
-=== Top 5 CPU热点函数 ===
-2026-05-29 11:46:35,362 - auto_perf_opt - INFO - 
-=== Top 5 CPU热点函数 ===
-2026-05-29 11:46:35,362 - auto_perf_opt - INFO - 动态分析完成
-2026-05-29 11:46:35,362 - auto_perf_opt - INFO - 动态分析完成
-2026-05-29 11:46:35,362 - auto_perf_opt - INFO - 所有分析完成，结果保存在: /home/pyt2204/program/auto_perf_opt/particle_output
-2026-05-29 11:46:35,362 - auto_perf_opt - INFO - 所有分析完成，结果保存在: /home/pyt2204/program/auto_perf_opt/particle_output
-2026-06-10 17:45:21,402 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-10 17:45:21,402 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-10 17:45:21,402 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-06-10 17:45:21,402 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-06-10 17:45:21,403 - auto_perf_opt - ERROR - ❌ Clang初始化失败: /usr/lib/llvm-14/lib/libclang.so.1: cannot open shared object file: No such file or directory. To provide a path to libclang use Config.set_library_path() or Config.set_library_file().
-2026-06-10 17:45:21,403 - auto_perf_opt - ERROR - ❌ Clang初始化失败: /usr/lib/llvm-14/lib/libclang.so.1: cannot open shared object file: No such file or directory. To provide a path to libclang use Config.set_library_path() or Config.set_library_file().
-2026-06-10 17:46:19,719 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-10 17:46:19,719 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-10 17:46:19,719 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-06-10 17:46:19,719 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-06-10 17:46:19,719 - auto_perf_opt - ERROR - ❌ Clang初始化失败: /usr/lib/llvm-14/lib/libclang.so.1: cannot open shared object file: No such file or directory. To provide a path to libclang use Config.set_library_path() or Config.set_library_file().
-2026-06-10 17:46:19,719 - auto_perf_opt - ERROR - ❌ Clang初始化失败: /usr/lib/llvm-14/lib/libclang.so.1: cannot open shared object file: No such file or directory. To provide a path to libclang use Config.set_library_path() or Config.set_library_file().
-2026-06-10 17:54:20,155 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-10 17:54:20,155 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-10 17:54:20,156 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-06-10 17:54:20,156 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-06-10 17:54:20,168 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-06-10 17:54:20,168 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-06-10 17:54:20,168 - auto_perf_opt - INFO - 开始解析项目...
-2026-06-10 17:54:20,168 - auto_perf_opt - INFO - 开始解析项目...
-2026-06-10 17:54:20,168 - auto_perf_opt - INFO - 项目解析完成，共发现 0 个函数，0 个类
-2026-06-10 17:54:20,168 - auto_perf_opt - INFO - 项目解析完成，共发现 0 个函数，0 个类
-2026-06-10 17:54:20,168 - auto_perf_opt - INFO - 生成函数调用图...
-2026-06-10 17:54:20,168 - auto_perf_opt - INFO - 生成函数调用图...
-2026-06-10 17:56:14,087 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-10 17:56:14,087 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-10 17:56:14,087 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-06-10 17:56:14,087 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-06-10 17:56:14,097 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-06-10 17:56:14,097 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-06-10 17:56:14,097 - auto_perf_opt - INFO - 开始解析项目...
-2026-06-10 17:56:14,097 - auto_perf_opt - INFO - 开始解析项目...
-2026-06-10 17:56:14,097 - auto_perf_opt - INFO - 项目解析完成，共发现 0 个函数，0 个类
-2026-06-10 17:56:14,097 - auto_perf_opt - INFO - 项目解析完成，共发现 0 个函数，0 个类
-2026-06-10 17:56:14,097 - auto_perf_opt - INFO - 生成函数调用图...
-2026-06-10 17:56:14,097 - auto_perf_opt - INFO - 生成函数调用图...
-2026-06-10 17:56:14,104 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-06-10 17:56:14,104 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-06-10 17:56:14,104 - auto_perf_opt - INFO - 生成类继承图...
-2026-06-10 17:56:14,104 - auto_perf_opt - INFO - 生成类继承图...
-2026-06-10 17:56:14,109 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-06-10 17:56:14,109 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-06-10 17:56:14,110 - auto_perf_opt - INFO - 静态分析完成
-2026-06-10 17:56:14,110 - auto_perf_opt - INFO - 静态分析完成
-2026-06-10 17:56:14,110 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-06-10 17:56:14,110 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-06-10 17:56:14,110 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-06-10 17:56:14,110 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-06-10 17:56:14,110 - auto_perf_opt - ERROR - 可执行文件不存在: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-06-10 17:56:14,110 - auto_perf_opt - ERROR - 可执行文件不存在: /home/pyt2204/program/particle_simulation/build/particle_simulation
-2026-06-10 17:57:13,876 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-10 17:57:13,876 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-10 17:57:13,876 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-06-10 17:57:13,876 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-06-10 17:57:13,888 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-06-10 17:57:13,888 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-06-10 17:57:13,888 - auto_perf_opt - INFO - 开始解析项目...
-2026-06-10 17:57:13,888 - auto_perf_opt - INFO - 开始解析项目...
-2026-06-10 17:57:17,652 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，29 个类
-2026-06-10 17:57:17,652 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，29 个类
-2026-06-10 17:57:17,652 - auto_perf_opt - INFO - 生成函数调用图...
-2026-06-10 17:57:17,652 - auto_perf_opt - INFO - 生成函数调用图...
-2026-06-10 17:57:17,671 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-06-10 17:57:17,671 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-06-10 17:57:17,671 - auto_perf_opt - INFO - 生成类继承图...
-2026-06-10 17:57:17,671 - auto_perf_opt - INFO - 生成类继承图...
-2026-06-10 17:57:17,708 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-06-10 17:57:17,708 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-06-10 17:57:17,708 - auto_perf_opt - INFO - 静态分析完成
-2026-06-10 17:57:17,708 - auto_perf_opt - INFO - 静态分析完成
-2026-06-10 17:57:17,708 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-06-10 17:57:17,708 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-06-10 17:57:17,709 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt/program/particle_simulation/build/particle_simulation
-2026-06-10 17:57:17,709 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt/program/particle_simulation/build/particle_simulation
-2026-06-10 17:57:17,709 - auto_perf_opt - ERROR - 可执行文件没有执行权限: /home/pyt/program/particle_simulation/build/particle_simulation
-2026-06-10 17:57:17,709 - auto_perf_opt - ERROR - 可执行文件没有执行权限: /home/pyt/program/particle_simulation/build/particle_simulation
-2026-06-11 09:40:25,703 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-11 09:40:25,703 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-11 09:40:25,703 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-06-11 09:40:25,703 - auto_perf_opt - INFO - === 开始静态分析 ===
-2026-06-11 09:40:25,764 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-06-11 09:40:25,764 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
-2026-06-11 09:40:25,765 - auto_perf_opt - INFO - 开始解析项目...
-2026-06-11 09:40:25,765 - auto_perf_opt - INFO - 开始解析项目...
-2026-06-11 09:40:30,170 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，29 个类
-2026-06-11 09:40:30,170 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，29 个类
-2026-06-11 09:40:30,170 - auto_perf_opt - INFO - 生成函数调用图...
-2026-06-11 09:40:30,170 - auto_perf_opt - INFO - 生成函数调用图...
-2026-06-11 09:40:30,207 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-06-11 09:40:30,207 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
-2026-06-11 09:40:30,207 - auto_perf_opt - INFO - 生成类继承图...
-2026-06-11 09:40:30,207 - auto_perf_opt - INFO - 生成类继承图...
-2026-06-11 09:40:30,259 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-06-11 09:40:30,259 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
-2026-06-11 09:40:30,259 - auto_perf_opt - INFO - 静态分析完成
-2026-06-11 09:40:30,259 - auto_perf_opt - INFO - 静态分析完成
-2026-06-11 09:40:30,259 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-06-11 09:40:30,259 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-06-11 09:40:30,259 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt/program/particle_simulation/build/particle_simulation
-2026-06-11 09:40:30,259 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt/program/particle_simulation/build/particle_simulation
-2026-06-11 09:40:30,259 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-06-11 09:40:30,259 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-06-11 09:40:30,259 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt/program/particle_simulation/build/particle_simulation /home/pyt/program/particle_simulation/configs/default.json
-2026-06-11 09:40:30,259 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt/program/particle_simulation/build/particle_simulation /home/pyt/program/particle_simulation/configs/default.json
-2026-06-11 09:40:30,260 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-06-11 09:40:30,260 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-06-11 09:45:32,012 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
-2026-06-11 09:45:32,012 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
-2026-06-11 09:45:33,888 - auto_perf_opt - INFO - 开始分析perf数据...
-2026-06-11 09:45:33,888 - auto_perf_opt - INFO - 开始分析perf数据...
-2026-06-11 09:45:40,948 - auto_perf_opt - INFO - 热点报告已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
-2026-06-11 09:45:40,948 - auto_perf_opt - INFO - 热点报告已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
-2026-06-11 09:45:40,948 - auto_perf_opt - INFO - 
-=== Top 5 CPU热点函数 ===
-2026-06-11 09:45:40,948 - auto_perf_opt - INFO - 
-=== Top 5 CPU热点函数 ===
-2026-06-11 09:45:40,948 - auto_perf_opt - INFO - 动态分析完成
-2026-06-11 09:45:40,948 - auto_perf_opt - INFO - 动态分析完成
-2026-06-11 09:45:40,948 - auto_perf_opt - INFO - 所有分析完成，结果保存在: /home/pyt/program/auto_perf_opt/particle_output
-2026-06-11 09:45:40,948 - auto_perf_opt - INFO - 所有分析完成，结果保存在: /home/pyt/program/auto_perf_opt/particle_output
-2026-06-11 10:00:46,099 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-11 10:00:46,099 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-11 10:00:46,099 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-06-11 10:00:46,099 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-06-11 10:00:46,099 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt/program/particle_simulation/build/particle_simulation
-2026-06-11 10:00:46,099 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt/program/particle_simulation/build/particle_simulation
-2026-06-11 10:00:46,099 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-06-11 10:00:46,099 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-06-11 10:00:46,099 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt/program/particle_simulation/build/particle_simulation /home/pyt/program/particle_simulation/configs/default.json
-2026-06-11 10:00:46,099 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses -o /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt/program/particle_simulation/build/particle_simulation /home/pyt/program/particle_simulation/configs/default.json
-2026-06-11 10:00:46,100 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-06-11 10:00:46,100 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-06-11 10:05:49,277 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
-2026-06-11 10:05:49,277 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
-2026-06-11 10:05:51,300 - auto_perf_opt - INFO - 开始分析perf数据...
-2026-06-11 10:05:51,300 - auto_perf_opt - INFO - 开始分析perf数据...
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 热点报告已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 热点报告已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 
-=== Top 5 CPU热点函数 ===
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 
-=== Top 5 CPU热点函数 ===
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 1. FrameDispatcher::executePosition(ParticleSystem&, double, int) [clone ._omp_fn.0] - 9.37% (/home/pyt/program/particle_simulation/build/particle_simulation)
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 1. FrameDispatcher::executePosition(ParticleSystem&, double, int) [clone ._omp_fn.0] - 9.37% (/home/pyt/program/particle_simulation/build/particle_simulation)
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 2. main - 8.17% (/home/pyt/program/particle_simulation/build/particle_simulation)
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 2. main - 8.17% (/home/pyt/program/particle_simulation/build/particle_simulation)
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 3. SolverOpenMP::run(ParticleSystem&, int, double) - 8.17% (/home/pyt/program/particle_simulation/build/particle_simulation)
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 3. SolverOpenMP::run(ParticleSystem&, int, double) - 8.17% (/home/pyt/program/particle_simulation/build/particle_simulation)
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 4. FrameDispatcher::dispatch(ParticleSystem&, double, int) - 8.16% (/home/pyt/program/particle_simulation/build/particle_simulation)
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 4. FrameDispatcher::dispatch(ParticleSystem&, double, int) - 8.16% (/home/pyt/program/particle_simulation/build/particle_simulation)
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 5. SimulationEngine::step(ParticleSystem&, double, int) - 8.16% (/home/pyt/program/particle_simulation/build/particle_simulation)
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 5. SimulationEngine::step(ParticleSystem&, double, int) - 8.16% (/home/pyt/program/particle_simulation/build/particle_simulation)
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 动态分析完成
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 动态分析完成
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 所有分析完成，结果保存在: /home/pyt/program/auto_perf_opt/particle_output
-2026-06-11 10:05:55,267 - auto_perf_opt - INFO - 所有分析完成，结果保存在: /home/pyt/program/auto_perf_opt/particle_output
-2026-06-11 10:44:06,080 - auto_perf_opt - INFO - 解析完成: 0 个函数, 0 个采样
-2026-06-11 10:44:06,080 - auto_perf_opt - INFO - 解析完成: 0 个函数, 0 个采样
-2026-06-11 10:46:33,102 - auto_perf_opt - INFO - 解析完成: 0 个函数, 0 个采样
-2026-06-11 10:46:33,102 - auto_perf_opt - INFO - 解析完成: 0 个函数, 0 个采样
-2026-06-11 10:47:43,899 - auto_perf_opt - INFO - 解析完成: 0 个函数, 0 个采样
-2026-06-11 10:47:43,899 - auto_perf_opt - INFO - 解析完成: 0 个函数, 0 个采样
-2026-06-11 10:48:01,641 - auto_perf_opt - INFO - 开始分析perf数据（多事件 + 调用树）...
-2026-06-11 10:48:01,641 - auto_perf_opt - INFO - 开始分析perf数据（多事件 + 调用树）...
-2026-06-11 10:48:04,737 - auto_perf_opt - INFO - 解析完成: 0 个函数, 0 个采样
-2026-06-11 10:48:04,737 - auto_perf_opt - INFO - 解析完成: 0 个函数, 0 个采样
-2026-06-11 10:48:04,738 - auto_perf_opt - INFO - 动态调用图 DOT 已生成: particle_output/dynamic_analysis/dynamic_call_graph.dot
-2026-06-11 10:48:04,738 - auto_perf_opt - INFO - 动态调用图 DOT 已生成: particle_output/dynamic_analysis/dynamic_call_graph.dot
-2026-06-11 10:48:04,738 - auto_perf_opt - INFO - 综合报告已生成: particle_output/dynamic_analysis/hotspot_report.json 和 particle_output/dynamic_analysis/hotspot_report.md
-2026-06-11 10:48:04,738 - auto_perf_opt - INFO - 综合报告已生成: particle_output/dynamic_analysis/hotspot_report.json 和 particle_output/dynamic_analysis/hotspot_report.md
-2026-06-11 10:49:38,848 - auto_perf_opt - INFO - 解析完成: 0 个函数, 0 个采样
-2026-06-11 10:49:38,848 - auto_perf_opt - INFO - 解析完成: 0 个函数, 0 个采样
-2026-06-11 10:51:18,595 - auto_perf_opt - INFO - 解析完成: 192 个函数, 331024 个采样
-2026-06-11 10:51:18,595 - auto_perf_opt - INFO - 解析完成: 192 个函数, 331024 个采样
-2026-06-11 10:51:30,538 - auto_perf_opt - INFO - 开始分析perf数据（多事件 + 调用树）...
-2026-06-11 10:51:30,538 - auto_perf_opt - INFO - 开始分析perf数据（多事件 + 调用树）...
-2026-06-11 10:51:35,194 - auto_perf_opt - INFO - 解析完成: 192 个函数, 331024 个采样
-2026-06-11 10:51:35,194 - auto_perf_opt - INFO - 解析完成: 192 个函数, 331024 个采样
-2026-06-11 10:51:35,202 - auto_perf_opt - INFO - 动态调用图 DOT 已生成: particle_output/dynamic_analysis/dynamic_call_graph.dot
-2026-06-11 10:51:35,202 - auto_perf_opt - INFO - 动态调用图 DOT 已生成: particle_output/dynamic_analysis/dynamic_call_graph.dot
-2026-06-11 10:51:35,202 - auto_perf_opt - INFO - 综合报告已生成: particle_output/dynamic_analysis/hotspot_report.json 和 particle_output/dynamic_analysis/hotspot_report.md
-2026-06-11 10:51:35,202 - auto_perf_opt - INFO - 综合报告已生成: particle_output/dynamic_analysis/hotspot_report.json 和 particle_output/dynamic_analysis/hotspot_report.md
-2026-06-11 10:54:54,655 - auto_perf_opt - INFO - 开始分析perf数据（多事件 + 调用树）...
-2026-06-11 10:54:54,655 - auto_perf_opt - INFO - 开始分析perf数据（多事件 + 调用树）...
-2026-06-11 10:54:59,326 - auto_perf_opt - INFO - 解析完成: 192 个函数, 331024 个采样
-2026-06-11 10:54:59,326 - auto_perf_opt - INFO - 解析完成: 192 个函数, 331024 个采样
-2026-06-11 10:54:59,333 - auto_perf_opt - INFO - 动态调用图 DOT 已生成: particle_output/dynamic_analysis/dynamic_call_graph.dot
-2026-06-11 10:54:59,333 - auto_perf_opt - INFO - 动态调用图 DOT 已生成: particle_output/dynamic_analysis/dynamic_call_graph.dot
-2026-06-11 10:54:59,333 - auto_perf_opt - INFO - 综合报告已生成: particle_output/dynamic_analysis/hotspot_report.json 和 particle_output/dynamic_analysis/hotspot_report.md
-2026-06-11 10:54:59,333 - auto_perf_opt - INFO - 综合报告已生成: particle_output/dynamic_analysis/hotspot_report.json 和 particle_output/dynamic_analysis/hotspot_report.md
-2026-06-11 10:54:59,483 - auto_perf_opt - INFO - 动态调用图已生成: particle_output/dynamic_analysis/dynamic_call_graph.png
-2026-06-11 10:54:59,483 - auto_perf_opt - INFO - 动态调用图已生成: particle_output/dynamic_analysis/dynamic_call_graph.png
-2026-06-11 10:56:21,187 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-11 10:56:21,187 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-11 10:56:21,187 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-06-11 10:56:21,187 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-06-11 10:56:21,187 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt/program/particle_simulation/build/particle_simulation
-2026-06-11 10:56:21,187 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt/program/particle_simulation/build/particle_simulation
-2026-06-11 10:56:21,187 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-06-11 10:56:21,187 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-06-11 10:56:21,187 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses -o /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt/program/particle_simulation/build/particle_simulation /home/pyt/program/particle_simulation/configs/default.json
-2026-06-11 10:56:21,187 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses -o /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt/program/particle_simulation/build/particle_simulation /home/pyt/program/particle_simulation/configs/default.json
-2026-06-11 10:56:21,188 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-06-11 10:56:21,188 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-06-11 10:56:21,213 - auto_perf_opt - ERROR - 进程异常退出，返回码: 255
-2026-06-11 10:56:21,213 - auto_perf_opt - ERROR - 进程异常退出，返回码: 255
-2026-06-11 10:56:21,213 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 255
-2026-06-11 10:56:21,213 - auto_perf_opt - ERROR - 运行可执行文件失败: 可执行文件运行失败，返回码: 255
-2026-06-11 10:56:59,877 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-11 10:56:59,877 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
-2026-06-11 10:56:59,877 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-06-11 10:56:59,877 - auto_perf_opt - INFO - === 开始动态分析 ===
-2026-06-11 10:56:59,877 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt/program/particle_simulation/build/particle_simulation
-2026-06-11 10:56:59,877 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt/program/particle_simulation/build/particle_simulation
-2026-06-11 10:56:59,877 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-06-11 10:56:59,877 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
-2026-06-11 10:56:59,877 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses,L1-dcache-loads,LLC-loads,LLC-load-misses -o /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt/program/particle_simulation/build/particle_simulation /home/pyt/program/particle_simulation/configs/default.json
-2026-06-11 10:56:59,877 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses,L1-dcache-loads,LLC-loads,LLC-load-misses -o /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt/program/particle_simulation/build/particle_simulation /home/pyt/program/particle_simulation/configs/default.json
-2026-06-11 10:56:59,878 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-06-11 10:56:59,878 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
-2026-06-11 11:02:03,184 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
-2026-06-11 11:02:03,184 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
-2026-06-11 11:02:06,530 - auto_perf_opt - INFO - 运行 perf stat 采集聚合指标...
-2026-06-11 11:02:06,530 - auto_perf_opt - INFO - 运行 perf stat 采集聚合指标...
-2026-06-11 11:04:02,074 - auto_perf_opt - INFO - 开始分析perf数据（多事件 + 调用树）...
-2026-06-11 11:04:02,074 - auto_perf_opt - INFO - 开始分析perf数据（多事件 + 调用树）...
-2026-06-11 11:04:09,022 - auto_perf_opt - INFO - 解析完成: 212 个函数, 484924 个采样
-2026-06-11 11:04:09,022 - auto_perf_opt - INFO - 解析完成: 212 个函数, 484924 个采样
-2026-06-11 11:04:09,031 - auto_perf_opt - INFO - 动态调用图 DOT 已生成: particle_output/dynamic_analysis/dynamic_call_graph.dot
-2026-06-11 11:04:09,031 - auto_perf_opt - INFO - 动态调用图 DOT 已生成: particle_output/dynamic_analysis/dynamic_call_graph.dot
-2026-06-11 11:04:09,031 - auto_perf_opt - INFO - 综合报告已生成: particle_output/dynamic_analysis/hotspot_report.json 和 particle_output/dynamic_analysis/hotspot_report.md
-2026-06-11 11:04:09,031 - auto_perf_opt - INFO - 综合报告已生成: particle_output/dynamic_analysis/hotspot_report.json 和 particle_output/dynamic_analysis/hotspot_report.md
-2026-06-11 11:04:09,154 - auto_perf_opt - INFO - 动态调用图已生成: particle_output/dynamic_analysis/dynamic_call_graph.png
-2026-06-11 11:04:09,154 - auto_perf_opt - INFO - 动态调用图已生成: particle_output/dynamic_analysis/dynamic_call_graph.png
-2026-06-11 11:33:57,331 - auto_perf_opt - INFO - 开始分析perf数据（多事件 + 调用树）...
-2026-06-11 11:33:57,331 - auto_perf_opt - INFO - 开始分析perf数据（多事件 + 调用树）...
-2026-06-11 11:34:04,307 - auto_perf_opt - INFO - 解析完成: 212 个函数, 484924 个采样
-2026-06-11 11:34:04,307 - auto_perf_opt - INFO - 解析完成: 212 个函数, 484924 个采样
-2026-06-11 11:34:04,316 - auto_perf_opt - INFO - 动态调用图 DOT 已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.dot
-2026-06-11 11:34:04,316 - auto_perf_opt - INFO - 动态调用图 DOT 已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.dot
-2026-06-11 11:34:04,316 - auto_perf_opt - INFO - 综合报告已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
-2026-06-11 11:34:04,316 - auto_perf_opt - INFO - 综合报告已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
-2026-06-11 11:34:04,443 - auto_perf_opt - INFO - 动态调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.png
-2026-06-11 11:34:04,443 - auto_perf_opt - INFO - 动态调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.png
+2026-06-25 10:41:49,252 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
+2026-06-25 10:41:49,252 - auto_perf_opt - INFO - === 开始静态分析 ===
+2026-06-25 10:41:49,279 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
+2026-06-25 10:41:49,279 - auto_perf_opt - INFO - 开始解析项目...
+2026-06-25 10:41:53,530 - auto_perf_opt - INFO - 项目解析完成，共发现 2 个函数，29 个类
+2026-06-25 10:41:53,530 - auto_perf_opt - INFO - 生成函数调用图...
+2026-06-25 10:41:53,555 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
+2026-06-25 10:41:53,556 - auto_perf_opt - INFO - 生成类继承图...
+2026-06-25 10:41:53,605 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
+2026-06-25 10:41:53,605 - auto_perf_opt - INFO - 静态分析完成
+2026-06-25 10:41:53,605 - auto_perf_opt - INFO - === 开始动态分析 ===
+2026-06-25 10:41:53,605 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt/program/particle_simulation/build/particle_simulation
+2026-06-25 10:41:53,605 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
+2026-06-25 10:41:53,605 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses,L1-dcache-loads,LLC-loads,LLC-load-misses -o /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt/program/particle_simulation/build/particle_simulation /home/pyt/program/particle_simulation/configs/default.json
+2026-06-25 10:41:53,606 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
+2026-06-25 10:42:07,638 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
+2026-06-25 10:42:08,119 - auto_perf_opt - INFO - 开始分析perf数据（多事件 + 调用树）...
+2026-06-25 10:42:08,846 - auto_perf_opt - INFO - 解析完成: 169 个函数, 49729 个采样
+2026-06-25 10:42:08,852 - auto_perf_opt - INFO - 动态调用图 DOT 已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.dot
+2026-06-25 10:42:08,852 - auto_perf_opt - INFO - 综合报告已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
+2026-06-25 10:42:08,854 - auto_perf_opt - WARNING - 未找到函数源码: double const& std::min<double>(double const&, double const&)
+2026-06-25 10:42:08,855 - auto_perf_opt - WARNING - 未找到函数源码: double const& std::max<double>(double const&, double const&)
+2026-06-25 10:42:08,856 - auto_perf_opt - INFO - 类型定义已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_sources/types.h
+2026-06-25 10:42:08,856 - auto_perf_opt - INFO - 源码已提取到: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_sources (共 6 个函数)
+2026-06-25 10:42:08,859 - auto_perf_opt - INFO - 已追加 6 个函数的源码到报告
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO - 动态调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.png
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO - 动态调用图: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.png
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO - 
+============================================================
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO - === 性能分析摘要 ===
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO - ============================================================
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO - 分析函数: 169 个
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO - 总采样数: 49,729
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO - 
+--- Top 5 CPU热点函数 ---
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO -   1. checkCellPairs(std::vector<Particle, std::allocato | CPU: 26.65% | IPC: 1.211 | CacheMiss: 100.0%
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO -   2. Diagnostics::updateAverage(double) | CPU: 14.23% | IPC: 1.935 | CacheMiss: 17.33%
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO -   3. double const& std::min<double>(double const&, doub | CPU: 11.45% | IPC: 1.317 | CacheMiss: 11.32%
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO -   4. Diagnostics::updateMax(double) | CPU: 5.8% | IPC: 1.196 | CacheMiss: 14.85%
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO -   5. Diagnostics::updateVariance(double) | CPU: 5.76% | IPC: 1.08 | CacheMiss: 14.99%
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO - 
+--- 事件分布 ---
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO -   cache_references: 9,834
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO -   llc-loads: 9,735
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO -   l1-dcache-loads: 9,205
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO -   instructions: 6,046
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO -   branch_instructions: 4,700
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO -   branch_misses: 4,101
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO -   cycles: 2,852
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO -   cache_misses: 2,184
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO -   llc-load-misses: 1,072
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO - 
+报告文件: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
+2026-06-25 10:42:09,010 - auto_perf_opt - INFO - JSON数据: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json
+2026-06-25 10:42:09,058 - auto_perf_opt - INFO - === 开始 LLM 性能优化分析（离线模式）===
+2026-06-25 10:42:09,058 - auto_perf_opt - INFO -   输入: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_sources
+2026-06-25 10:42:09,058 - auto_perf_opt - INFO -   输出: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches
+2026-06-25 10:42:09,058 - auto_perf_opt - INFO - 加载了 6 个热点函数的元数据
+2026-06-25 10:42:09,059 - auto_perf_opt - INFO - 已为 6 个函数构建 prompt
+2026-06-25 10:42:09,059 - auto_perf_opt - INFO - 合并 prompt 已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/prompt_all.md
+2026-06-25 10:42:09,059 - auto_perf_opt - INFO - 单个 prompt 已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/prompt_single/ (共 6 个)
+2026-06-25 10:42:09,059 - auto_perf_opt - INFO - === LLM 分析完成，结果保存在: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches ===
+2026-06-25 10:42:09,059 - auto_perf_opt - INFO - 
+所有分析完成，结果保存在: /home/pyt/program/auto_perf_opt/particle_output
+2026-06-25 10:42:18,245 - auto_perf_opt - INFO - === 开始 LLM 性能优化分析（在线模式）===
+2026-06-25 10:42:18,245 - auto_perf_opt - INFO -   API 地址: http://10.0.0.5:8000/v1/chat/completions
+2026-06-25 10:42:18,245 - auto_perf_opt - INFO -   输入: particle_output/dynamic_analysis/hotspot_sources
+2026-06-25 10:42:18,245 - auto_perf_opt - INFO -   输出: particle_output/dynamic_analysis/llm_patches
+2026-06-25 10:42:18,245 - auto_perf_opt - INFO - 加载了 6 个热点函数的元数据
+2026-06-25 10:42:18,245 - auto_perf_opt - INFO - 已为 6 个函数构建 prompt
+2026-06-25 10:42:18,245 - auto_perf_opt - INFO - 正在请求大模型分析 (1/6): checkCellPairs(std::vector<Particle, std::allocato
+2026-06-25 10:44:18,347 - auto_perf_opt - ERROR - API 请求失败: HTTPConnectionPool(host='10.0.0.5', port=8000): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<HTTPConnection(host='10.0.0.5', port=8000) at 0x7ba22b590090>, 'Connection to 10.0.0.5 timed out. (connect timeout=120)'))
+2026-06-25 10:44:18,347 - auto_perf_opt - INFO - 正在请求大模型分析 (2/6): Diagnostics::updateAverage(double)
+2026-06-25 14:34:42,366 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
+2026-06-25 14:34:42,366 - auto_perf_opt - INFO - === 开始静态分析 ===
+2026-06-25 14:34:42,559 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
+2026-06-25 14:34:42,559 - auto_perf_opt - INFO - 开始解析项目...
+2026-06-25 14:34:47,050 - auto_perf_opt - INFO - 项目解析完成，共发现 2 个函数，29 个类
+2026-06-25 14:34:47,050 - auto_perf_opt - INFO - 生成函数调用图...
+2026-06-25 14:34:47,088 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
+2026-06-25 14:34:47,088 - auto_perf_opt - INFO - 生成类继承图...
+2026-06-25 14:34:47,138 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
+2026-06-25 14:34:47,138 - auto_perf_opt - INFO - 静态分析完成
+2026-06-25 14:34:47,138 - auto_perf_opt - INFO - === 开始动态分析 ===
+2026-06-25 14:34:47,138 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt/program/particle_simulation/build/particle_simulation
+2026-06-25 14:34:47,138 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
+2026-06-25 14:34:47,138 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses,L1-dcache-loads,LLC-loads,LLC-load-misses -o /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt/program/particle_simulation/build/particle_simulation /home/pyt/program/particle_simulation/configs/default.json
+2026-06-25 14:34:47,139 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
+2026-06-25 14:35:01,194 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
+2026-06-25 14:35:01,532 - auto_perf_opt - INFO - 开始分析perf数据（多事件 + 调用树）...
+2026-06-25 14:35:02,192 - auto_perf_opt - INFO - 解析完成: 171 个函数, 48469 个采样
+2026-06-25 14:35:02,198 - auto_perf_opt - INFO - 动态调用图 DOT 已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.dot
+2026-06-25 14:35:02,199 - auto_perf_opt - INFO - 综合报告已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
+2026-06-25 14:35:02,200 - auto_perf_opt - WARNING - 未找到函数源码: double const& std::min<double>(double const&, double const&)
+2026-06-25 14:35:02,201 - auto_perf_opt - WARNING - 未找到函数源码: double const& std::max<double>(double const&, double const&)
+2026-06-25 14:35:02,202 - auto_perf_opt - INFO - 类型定义已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_sources/types.h
+2026-06-25 14:35:02,202 - auto_perf_opt - INFO - 源码已提取到: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_sources (共 5 个函数)
+2026-06-25 14:35:02,206 - auto_perf_opt - INFO - 已追加 5 个函数的源码到报告
+2026-06-25 14:35:02,337 - auto_perf_opt - INFO - 动态调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.png
+2026-06-25 14:35:02,337 - auto_perf_opt - INFO - 动态调用图: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.png
+2026-06-25 14:35:02,337 - auto_perf_opt - INFO - 
+============================================================
+2026-06-25 14:35:02,337 - auto_perf_opt - INFO - === 性能分析摘要 ===
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO - ============================================================
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO - 分析函数: 171 个
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO - 总采样数: 48,469
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO - 
+--- Top 5 CPU热点函数 ---
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO -   1. checkCellPairs(std::vector<Particle, std::allocato | CPU: 27.64% | IPC: 1.12 | CacheMiss: 100.0%
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO -   2. Diagnostics::updateAverage(double) | CPU: 14.44% | IPC: 1.921 | CacheMiss: 7.5%
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO -   3. double const& std::min<double>(double const&, doub | CPU: 12.2% | IPC: 1.149 | CacheMiss: 6.38%
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO -   4. Diagnostics::updateMax(double) | CPU: 7.22% | IPC: 0.97 | CacheMiss: 7.21%
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO -   5. Diagnostics::updateVariance(double) | CPU: 5.37% | IPC: 1.238 | CacheMiss: 5.08%
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO - 
+--- 事件分布 ---
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO -   cache_references: 10,016
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO -   llc-loads: 9,893
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO -   l1-dcache-loads: 9,258
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO -   instructions: 5,955
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO -   branch_instructions: 4,703
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO -   branch_misses: 4,170
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO -   cycles: 2,861
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO -   cache_misses: 1,186
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO -   llc-load-misses: 427
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO - 
+报告文件: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
+2026-06-25 14:35:02,338 - auto_perf_opt - INFO - JSON数据: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json
+2026-06-25 14:35:02,417 - auto_perf_opt - INFO - === 开始 LLM 性能优化分析（在线模式）===
+2026-06-25 14:35:02,417 - auto_perf_opt - INFO -   API 地址: https://api.deepseek.com/v1/chat/completions
+2026-06-25 14:35:02,417 - auto_perf_opt - INFO -   模型: deepseek
+2026-06-25 14:35:02,417 - auto_perf_opt - INFO -   输入: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_sources
+2026-06-25 14:35:02,417 - auto_perf_opt - INFO -   输出: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches
+2026-06-25 14:35:02,417 - auto_perf_opt - INFO - 加载了 5 个热点函数的元数据
+2026-06-25 14:35:02,417 - auto_perf_opt - INFO - 已为 5 个函数构建 prompt
+2026-06-25 14:35:02,417 - auto_perf_opt - INFO - 正在请求大模型分析 (1/5): checkCellPairs(std::vector<Particle, std::allocato
+2026-06-25 14:35:02,982 - auto_perf_opt - ERROR - API 请求失败: 400 Client Error: Bad Request for url: https://api.deepseek.com/v1/chat/completions
+2026-06-25 14:35:02,983 - auto_perf_opt - INFO - 正在请求大模型分析 (2/5): Diagnostics::updateAverage(double)
+2026-06-25 14:35:03,304 - auto_perf_opt - ERROR - API 请求失败: 400 Client Error: Bad Request for url: https://api.deepseek.com/v1/chat/completions
+2026-06-25 14:35:03,306 - auto_perf_opt - INFO - 正在请求大模型分析 (3/5): Diagnostics::updateMax(double)
+2026-06-25 14:35:03,777 - auto_perf_opt - ERROR - API 请求失败: 400 Client Error: Bad Request for url: https://api.deepseek.com/v1/chat/completions
+2026-06-25 14:35:03,779 - auto_perf_opt - INFO - 正在请求大模型分析 (4/5): Diagnostics::updateVariance(double)
+2026-06-25 14:35:04,253 - auto_perf_opt - ERROR - API 请求失败: 400 Client Error: Bad Request for url: https://api.deepseek.com/v1/chat/completions
+2026-06-25 14:35:04,255 - auto_perf_opt - INFO - 正在请求大模型分析 (5/5): Diagnostics::samplePosition(Particle const&)
+2026-06-25 14:35:04,590 - auto_perf_opt - ERROR - API 请求失败: 400 Client Error: Bad Request for url: https://api.deepseek.com/v1/chat/completions
+2026-06-25 14:35:04,593 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/01_checkCellPairs_std__vector_Particle__std__allocator_Particle______std__vector_in_analysis.md
+2026-06-25 14:35:04,594 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/02_Diagnostics__updateAverage_double__analysis.md
+2026-06-25 14:35:04,594 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/03_Diagnostics__updateMax_double__analysis.md
+2026-06-25 14:35:04,594 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/04_Diagnostics__updateVariance_double__analysis.md
+2026-06-25 14:35:04,594 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/05_Diagnostics__samplePosition_Particle_const___analysis.md
+2026-06-25 14:35:04,594 - auto_perf_opt - INFO - === LLM 分析完成，结果保存在: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches ===
+2026-06-25 14:35:04,594 - auto_perf_opt - INFO - 
+所有分析完成，结果保存在: /home/pyt/program/auto_perf_opt/particle_output
+2026-06-25 14:37:40,059 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
+2026-06-25 14:37:40,060 - auto_perf_opt - INFO - === 开始静态分析 ===
+2026-06-25 14:37:40,086 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
+2026-06-25 14:37:40,086 - auto_perf_opt - INFO - 开始解析项目...
+2026-06-25 14:37:44,379 - auto_perf_opt - INFO - 项目解析完成，共发现 2 个函数，29 个类
+2026-06-25 14:37:44,379 - auto_perf_opt - INFO - 生成函数调用图...
+2026-06-25 14:37:44,401 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
+2026-06-25 14:37:44,401 - auto_perf_opt - INFO - 生成类继承图...
+2026-06-25 14:37:44,436 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
+2026-06-25 14:37:44,436 - auto_perf_opt - INFO - 静态分析完成
+2026-06-25 14:37:44,436 - auto_perf_opt - INFO - === 开始动态分析 ===
+2026-06-25 14:37:44,436 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt/program/particle_simulation/build/particle_simulation
+2026-06-25 14:37:44,436 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
+2026-06-25 14:37:44,436 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses,L1-dcache-loads,LLC-loads,LLC-load-misses -o /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt/program/particle_simulation/build/particle_simulation /home/pyt/program/particle_simulation/configs/default.json
+2026-06-25 14:37:44,437 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
+2026-06-25 14:37:58,537 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
+2026-06-25 14:37:58,877 - auto_perf_opt - INFO - 开始分析perf数据（多事件 + 调用树）...
+2026-06-25 14:37:59,528 - auto_perf_opt - INFO - 解析完成: 154 个函数, 48069 个采样
+2026-06-25 14:37:59,543 - auto_perf_opt - INFO - 动态调用图 DOT 已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.dot
+2026-06-25 14:37:59,543 - auto_perf_opt - INFO - 综合报告已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
+2026-06-25 14:37:59,545 - auto_perf_opt - WARNING - 未找到函数源码: double const& std::min<double>(double const&, double const&)
+2026-06-25 14:37:59,546 - auto_perf_opt - WARNING - 未找到函数源码: double const& std::max<double>(double const&, double const&)
+2026-06-25 14:37:59,547 - auto_perf_opt - INFO - 类型定义已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_sources/types.h
+2026-06-25 14:37:59,547 - auto_perf_opt - INFO - 源码已提取到: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_sources (共 6 个函数)
+2026-06-25 14:37:59,550 - auto_perf_opt - INFO - 已追加 6 个函数的源码到报告
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO - 动态调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.png
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO - 动态调用图: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.png
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO - 
+============================================================
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO - === 性能分析摘要 ===
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO - ============================================================
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO - 分析函数: 154 个
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO - 总采样数: 48,069
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO - 
+--- Top 5 CPU热点函数 ---
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO -   1. checkCellPairs(std::vector<Particle, std::allocato | CPU: 25.97% | IPC: 1.164 | CacheMiss: 100.0%
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO -   2. Diagnostics::updateAverage(double) | CPU: 14.96% | IPC: 1.764 | CacheMiss: 5.47%
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO -   3. double const& std::min<double>(double const&, doub | CPU: 12.58% | IPC: 1.194 | CacheMiss: 3.82%
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO -   4. Diagnostics::updateVariance(double) | CPU: 5.94% | IPC: 1.259 | CacheMiss: 4.88%
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO -   5. Diagnostics::updateMax(double) | CPU: 5.91% | IPC: 1.012 | CacheMiss: 5.74%
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO - 
+--- 事件分布 ---
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO -   cache_references: 10,005
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO -   llc-loads: 9,974
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO -   l1-dcache-loads: 9,346
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO -   instructions: 6,079
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO -   branch_instructions: 4,464
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO -   branch_misses: 4,079
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO -   cycles: 2,893
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO -   cache_misses: 947
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO -   llc-load-misses: 282
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO - 
+报告文件: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
+2026-06-25 14:37:59,723 - auto_perf_opt - INFO - JSON数据: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json
+2026-06-25 14:37:59,768 - auto_perf_opt - INFO - === 开始 LLM 性能优化分析（在线模式）===
+2026-06-25 14:37:59,768 - auto_perf_opt - INFO -   API 地址: https://api.deepseek.com/v1/chat/completions
+2026-06-25 14:37:59,768 - auto_perf_opt - INFO -   模型: deepseek-chat
+2026-06-25 14:37:59,768 - auto_perf_opt - INFO -   输入: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_sources
+2026-06-25 14:37:59,768 - auto_perf_opt - INFO -   输出: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches
+2026-06-25 14:37:59,768 - auto_perf_opt - INFO - 加载了 6 个热点函数的元数据
+2026-06-25 14:37:59,768 - auto_perf_opt - INFO - 已为 6 个函数构建 prompt
+2026-06-25 14:37:59,768 - auto_perf_opt - INFO - 正在请求大模型分析 (1/6): checkCellPairs(std::vector<Particle, std::allocato
+2026-06-25 14:38:42,328 - auto_perf_opt - INFO - 正在请求大模型分析 (2/6): Diagnostics::updateAverage(double)
+2026-06-25 14:38:48,683 - auto_perf_opt - INFO - 正在请求大模型分析 (3/6): Diagnostics::updateVariance(double)
+2026-06-25 14:39:06,709 - auto_perf_opt - INFO - 正在请求大模型分析 (4/6): Diagnostics::updateMax(double)
+2026-06-25 14:39:24,627 - auto_perf_opt - INFO - 正在请求大模型分析 (5/6): Diagnostics::updateMin(double)
+2026-06-25 14:39:40,708 - auto_perf_opt - INFO - 正在请求大模型分析 (6/6): Diagnostics::samplePosition(Particle const&)
+2026-06-25 14:39:50,126 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/01_checkCellPairs_std__vector_Particle__std__allocator_Particle______std__vector_in_analysis.md
+2026-06-25 14:39:50,127 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/01_checkCellPairs_std__vector_Particle__std__allocator_Particle______std__vector_in_optimized_v1.cpp
+2026-06-25 14:39:50,127 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/01_checkCellPairs_std__vector_Particle__std__allocator_Particle______std__vector_in_optimized_v2.cpp
+2026-06-25 14:39:50,127 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/02_Diagnostics__updateAverage_double__analysis.md
+2026-06-25 14:39:50,127 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/02_Diagnostics__updateAverage_double__optimized.cpp
+2026-06-25 14:39:50,127 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/03_Diagnostics__updateVariance_double__analysis.md
+2026-06-25 14:39:50,128 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/03_Diagnostics__updateVariance_double__optimized_v1.cpp
+2026-06-25 14:39:50,128 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/03_Diagnostics__updateVariance_double__optimized_v2.cpp
+2026-06-25 14:39:50,128 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/03_Diagnostics__updateVariance_double__optimized_v3.cpp
+2026-06-25 14:39:50,128 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/04_Diagnostics__updateMax_double__analysis.md
+2026-06-25 14:39:50,128 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/04_Diagnostics__updateMax_double__optimized_v1.cpp
+2026-06-25 14:39:50,128 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/04_Diagnostics__updateMax_double__optimized_v2.cpp
+2026-06-25 14:39:50,128 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/04_Diagnostics__updateMax_double__optimized_v3.cpp
+2026-06-25 14:39:50,129 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/05_Diagnostics__updateMin_double__analysis.md
+2026-06-25 14:39:50,129 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/05_Diagnostics__updateMin_double__optimized_v1.cpp
+2026-06-25 14:39:50,129 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/05_Diagnostics__updateMin_double__optimized_v2.cpp
+2026-06-25 14:39:50,129 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/05_Diagnostics__updateMin_double__optimized_v3.cpp
+2026-06-25 14:39:50,129 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/06_Diagnostics__samplePosition_Particle_const___analysis.md
+2026-06-25 14:39:50,129 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/06_Diagnostics__samplePosition_Particle_const___optimized.cpp
+2026-06-25 14:39:50,129 - auto_perf_opt - INFO - === LLM 分析完成，结果保存在: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches ===
+2026-06-25 14:39:50,130 - auto_perf_opt - INFO - 
+所有分析完成，结果保存在: /home/pyt/program/auto_perf_opt/particle_output
+2026-06-25 15:29:41,490 - auto_perf_opt - INFO - 加载项目配置成功: particle_simulation
+2026-06-25 15:29:41,499 - auto_perf_opt - INFO - === 开始静态分析 ===
+2026-06-25 15:29:41,532 - auto_perf_opt - INFO - ✅ Clang初始化成功，使用库文件: /usr/lib/llvm-14/lib/libclang.so.1
+2026-06-25 15:29:41,532 - auto_perf_opt - INFO - 开始解析项目...
+2026-06-25 15:29:45,059 - auto_perf_opt - INFO - 项目解析完成，共发现 1 个函数，27 个类
+2026-06-25 15:29:45,059 - auto_perf_opt - INFO - 生成函数调用图...
+2026-06-25 15:29:45,076 - auto_perf_opt - INFO - 函数调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/function_call_graph.png
+2026-06-25 15:29:45,076 - auto_perf_opt - INFO - 生成类继承图...
+2026-06-25 15:29:45,124 - auto_perf_opt - INFO - 类继承图已生成: /home/pyt/program/auto_perf_opt/particle_output/static_analysis/class_inheritance_graph.png
+2026-06-25 15:29:45,124 - auto_perf_opt - INFO - 静态分析完成
+2026-06-25 15:29:45,124 - auto_perf_opt - INFO - === 开始动态分析 ===
+2026-06-25 15:29:45,124 - auto_perf_opt - INFO - 准备运行可执行文件: /home/pyt/program/particle_simulation/build/particle_simulation
+2026-06-25 15:29:45,124 - auto_perf_opt - INFO - 启动性能分析，将等待程序自然运行结束
+2026-06-25 15:29:45,124 - auto_perf_opt - INFO - 执行命令: perf record -g -F 99 -e cycles,instructions,cache-references,cache-misses,branch-instructions,branch-misses,L1-dcache-loads,LLC-loads,LLC-load-misses -o /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/perf_data -- /home/pyt/program/particle_simulation/build/particle_simulation /home/pyt/program/particle_simulation/configs/default.json
+2026-06-25 15:29:45,124 - auto_perf_opt - INFO - 程序正在运行，请手动关闭程序或等待它自然结束...
+2026-06-25 15:30:37,348 - auto_perf_opt - INFO - 程序运行完成，perf数据采集成功
+2026-06-25 15:30:38,189 - auto_perf_opt - INFO - 开始分析perf数据（多事件 + 调用树）...
+2026-06-25 15:30:39,898 - auto_perf_opt - INFO - 解析完成: 184 个函数, 170030 个采样
+2026-06-25 15:30:39,904 - auto_perf_opt - INFO - 动态调用图 DOT 已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.dot
+2026-06-25 15:30:39,904 - auto_perf_opt - INFO - 综合报告已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json 和 /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
+2026-06-25 15:30:39,905 - auto_perf_opt - WARNING - 未找到函数源码: checkCellPairs(std::vector<Particle, std::allocator<Particle> >&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&)
+2026-06-25 15:30:39,907 - auto_perf_opt - WARNING - 未找到函数源码: double const& std::min<double>(double const&, double const&)
+2026-06-25 15:30:39,908 - auto_perf_opt - INFO - 类型定义已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_sources/types.h
+2026-06-25 15:30:39,908 - auto_perf_opt - INFO - 源码已提取到: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_sources (共 5 个函数)
+2026-06-25 15:30:39,911 - auto_perf_opt - INFO - 已追加 5 个函数的源码到报告
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO - 动态调用图已生成: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.png
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO - 动态调用图: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/dynamic_call_graph.png
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO - 
+============================================================
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO - === 性能分析摘要 ===
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO - ============================================================
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO - 分析函数: 184 个
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO - 总采样数: 170,030
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO - 
+--- Top 5 CPU热点函数 ---
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO -   1. PositionPipeline::execute(Particle&, double) | CPU: 80.14% | IPC: 1.28 | CacheMiss: 17.35%
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO -   2. checkCellPairs(std::vector<Particle, std::allocato | CPU: 4.05% | IPC: 2.828 | CacheMiss: 100.0%
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO -   3. FrameDispatcher::executePosition(ParticleSystem&,  | CPU: 3.53% | IPC: 6.247 | CacheMiss: 4.6%
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO -   4. Diagnostics::updateAverage(double) | CPU: 2.65% | IPC: 0.584 | CacheMiss: 44.11%
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO -   5. double const& std::min<double>(double const&, doub | CPU: 2.18% | IPC: 0.361 | CacheMiss: 41.09%
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO - 
+--- 事件分布 ---
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO -   l1-dcache-loads: 33,898
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO -   instructions: 28,405
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO -   branch_instructions: 25,252
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO -   cache_references: 23,932
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO -   llc-loads: 23,450
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO -   cycles: 18,186
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO -   branch_misses: 11,440
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO -   cache_misses: 4,207
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO -   llc-load-misses: 1,260
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO - 
+报告文件: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.md
+2026-06-25 15:30:40,007 - auto_perf_opt - INFO - JSON数据: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_report.json
+2026-06-25 15:30:40,052 - auto_perf_opt - INFO - === 开始 LLM 性能优化分析（在线模式）===
+2026-06-25 15:30:40,052 - auto_perf_opt - INFO -   API 地址: https://api.deepseek.com/v1/chat/completions
+2026-06-25 15:30:40,052 - auto_perf_opt - INFO -   模型: deepseek-chat
+2026-06-25 15:30:40,052 - auto_perf_opt - INFO -   输入: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/hotspot_sources
+2026-06-25 15:30:40,052 - auto_perf_opt - INFO -   输出: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches
+2026-06-25 15:30:40,052 - auto_perf_opt - INFO - 加载了 5 个热点函数的元数据
+2026-06-25 15:30:40,052 - auto_perf_opt - INFO - 已为 5 个函数构建 prompt
+2026-06-25 15:30:40,052 - auto_perf_opt - INFO - 正在请求大模型分析 (1/5): PositionPipeline::execute(Particle&, double)
+2026-06-25 15:30:54,976 - auto_perf_opt - INFO - 正在请求大模型分析 (2/5): FrameDispatcher::executePosition(ParticleSystem&, 
+2026-06-25 15:31:13,199 - auto_perf_opt - INFO - 正在请求大模型分析 (3/5): Diagnostics::updateAverage(double)
+2026-06-25 15:31:32,864 - auto_perf_opt - INFO - 正在请求大模型分析 (4/5): Diagnostics::updateMax(double)
+2026-06-25 15:31:38,383 - auto_perf_opt - INFO - 正在请求大模型分析 (5/5): Diagnostics::updateVariance(double)
+2026-06-25 15:31:49,046 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/01_PositionPipeline__execute_Particle___double__analysis.md
+2026-06-25 15:31:49,047 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/01_PositionPipeline__execute_Particle___double__optimized_v1.cpp
+2026-06-25 15:31:49,047 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/01_PositionPipeline__execute_Particle___double__optimized_v2.cpp
+2026-06-25 15:31:49,047 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/01_PositionPipeline__execute_Particle___double__optimized_v3.cpp
+2026-06-25 15:31:49,047 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/02_FrameDispatcher__executePosition_ParticleSystem___double__int___clone_._omp_fn.0_analysis.md
+2026-06-25 15:31:49,048 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/02_FrameDispatcher__executePosition_ParticleSystem___double__int___clone_._omp_fn.0_optimized_v1.cpp
+2026-06-25 15:31:49,048 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/02_FrameDispatcher__executePosition_ParticleSystem___double__int___clone_._omp_fn.0_optimized_v2.cpp
+2026-06-25 15:31:49,048 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/02_FrameDispatcher__executePosition_ParticleSystem___double__int___clone_._omp_fn.0_optimized_v3.cpp
+2026-06-25 15:31:49,048 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/02_FrameDispatcher__executePosition_ParticleSystem___double__int___clone_._omp_fn.0_optimized_v4.cpp
+2026-06-25 15:31:49,048 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/03_Diagnostics__updateAverage_double__analysis.md
+2026-06-25 15:31:49,048 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/03_Diagnostics__updateAverage_double__optimized.cpp
+2026-06-25 15:31:49,048 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/04_Diagnostics__updateMax_double__analysis.md
+2026-06-25 15:31:49,048 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/04_Diagnostics__updateMax_double__optimized_v1.cpp
+2026-06-25 15:31:49,048 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/04_Diagnostics__updateMax_double__optimized_v2.cpp
+2026-06-25 15:31:49,049 - auto_perf_opt - INFO - 分析报告已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/05_Diagnostics__updateVariance_double__analysis.md
+2026-06-25 15:31:49,049 - auto_perf_opt - INFO - 优化代码已保存: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches/05_Diagnostics__updateVariance_double__optimized.cpp
+2026-06-25 15:31:49,049 - auto_perf_opt - INFO - === LLM 分析完成，结果保存在: /home/pyt/program/auto_perf_opt/particle_output/dynamic_analysis/llm_patches ===
+2026-06-25 15:31:49,049 - auto_perf_opt - INFO - 
+所有分析完成，结果保存在: /home/pyt/program/auto_perf_opt/particle_output

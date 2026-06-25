@@ -1,1 +1,1 @@
-python3 main.py -c project_config.yaml -o particle_output
+python3 main.py -c project_config.yaml -o particle_output --llm

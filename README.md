@@ -31,3 +31,6 @@ pip install libclang==14.0.6
 sudo apt-get install -y graphviz
 pip install graphviz 
 pip install requests
+
+四、运行
+run.sh
